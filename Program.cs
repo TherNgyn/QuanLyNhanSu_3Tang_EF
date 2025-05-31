@@ -16,7 +16,7 @@ namespace QuanLyNhanSu_3Tang_EF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLyHopDong());
+            Application.Run(new frmThongKeLuongNhanVien("NV04"));
         }
     }
 }

@@ -39,6 +39,12 @@
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\..\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\SSAS\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -62,7 +68,12 @@
     <Compile Include="BaoHiem.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BS Layer\BLCong.cs" />
     <Compile Include="BS Layer\BLHopDong.cs" />
+    <Compile Include="BS Layer\BLLuong.cs" />
+    <Compile Include="BS Layer\BLNhanVien.cs" />
+    <Compile Include="BS Layer\BLThang.cs" />
+    <Compile Include="BS Layer\BLThuongPhat.cs" />
     <Compile Include="ChamCong.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
@@ -81,11 +92,59 @@
     <Compile Include="ctThuongPhat.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="frmChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamCong.Designer.cs">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHopDong.Designer.cs">
+      <DependentUpon>frmChiTietHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietThuongPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietThuongPhat.Designer.cs">
+      <DependentUpon>frmChiTietThuongPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLuongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLuongNhanVien.Designer.cs">
+      <DependentUpon>frmLuongNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyCongvaThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyCongvaThang.Designer.cs">
+      <DependentUpon>frmQuanLyCongvaThang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuanLyHopDong.Designer.cs">
       <DependentUpon>frmQuanLyHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyThuongPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyThuongPhat.Designer.cs">
+      <DependentUpon>frmQuanLyThuongPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeLuongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeLuongNhanVien.Designer.cs">
+      <DependentUpon>frmThongKeLuongNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="HopDong.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
@@ -125,6 +184,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNhanSuModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="QLNS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TaiKhoan.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
@@ -137,8 +202,29 @@
     <Compile Include="ThuongPhat.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChamCong.resx">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietHopDong.resx">
+      <DependentUpon>frmChiTietHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLuongNhanVien.resx">
+      <DependentUpon>frmLuongNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyCongvaThang.resx">
+      <DependentUpon>frmQuanLyCongvaThang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyHopDong.resx">
       <DependentUpon>frmQuanLyHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyThuongPhat.resx">
+      <DependentUpon>frmQuanLyThuongPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeLuongNhanVien.resx">
+      <DependentUpon>frmThongKeLuongNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -148,7 +234,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportLuongHDPCTP.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,6 +269,33 @@
       <DependentUpon>QLNhanSuModel.edmx</DependentUpon>
       <LastGenOutput>QLNhanSuModel.cs</LastGenOutput>
     </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="QLNS.xsc">
+      <DependentUpon>QLNS.xsd</DependentUpon>
+    </None>
+    <None Include="QLNS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QLNS.xss">
+      <DependentUpon>QLNS.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\salary.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -18,9 +18,12 @@ namespace QuanLyNhanSu_3Tang_EF
         bool Them;
         string err;
         BLHopDong dbHopDong = new BLHopDong();
-        public frmQuanLyHopDong()
+        string NV;
+        public frmQuanLyHopDong(string maNV)
         {
             InitializeComponent();
+
+            this.NV = maNV;
         }
         void LoadData()
         {
@@ -60,8 +63,8 @@ namespace QuanLyNhanSu_3Tang_EF
 
         private void btnXemChiTiet_Click(object sender, EventArgs e)
         {
-           /* frmChiTietHopDong ct = new frmChiTietHopDong(this.txtMaNhanVien.Text);
-            ct.ShowDialog();*/
+            frmChiTietHopDong ct = new frmChiTietHopDong(this.txtTimKiemMaNV.Text);
+            ct.ShowDialog();
         }
 
         private void frmQuanLyHopDong_Load(object sender, EventArgs e)
@@ -72,11 +75,13 @@ namespace QuanLyNhanSu_3Tang_EF
         private void btnThoat_Click(object sender, EventArgs e)
         {
 
-            DialogResult traloi;
-            traloi = MessageBox.Show("Chắc không?", "Trả lời",
-            MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            // Kiểm tra có nhắp chọn nút Ok không?  
-            if (traloi == DialogResult.OK) this.Close();
+            DialogResult traloi = MessageBox.Show("Chắc chắn thoát?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traloi == DialogResult.OK)
+            {
+                /* frmMenuQuanTriVien frm = new frmMenuQuanTriVien(NV);
+                 frm.ShowDialog();*/
+                this.Close();
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -172,7 +177,7 @@ namespace QuanLyNhanSu_3Tang_EF
             // Không cho thao tác trên các nút Lưu / Hủy / Panel  
             this.btnLuu.Enabled = false;
             this.btnHuy.Enabled = false;
-            this.guna2GroupBox3.Enabled = false;
+
             dataGridViewHopDong_CellClick(null, null);
 
         }
@@ -245,7 +250,7 @@ namespace QuanLyNhanSu_3Tang_EF
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-           /* string maNV = this.txtTimKiemMaNV.Text.Trim();
+            string maNV = this.txtTimKiemMaNV.Text.Trim();
             DataSet ds = dbHopDong.TimKiemHopDong(maNV);
 
             if (ds != null && ds.Tables.Count > 0)
@@ -255,7 +260,7 @@ namespace QuanLyNhanSu_3Tang_EF
             else
             {
                 MessageBox.Show("Không tìm thấy dữ liệu phù hợp.");
-            }*/
+            }
         }
 
         private void txtTimKiemMaNV_TextChanged(object sender, EventArgs e)
@@ -286,6 +291,12 @@ namespace QuanLyNhanSu_3Tang_EF
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+
+        private void frmQuanLyHopDong_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            /*frmMenuQuanTriVien frm = new frmMenuQuanTriVien(NV);
+            frm.Show();*/
         }
     }
 }
