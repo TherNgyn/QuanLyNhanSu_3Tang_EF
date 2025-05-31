@@ -15,8 +15,9 @@ namespace QuanLyNhanSu_3Tang_EF
         static void Main()
         {
             Application.EnableVisualStyles();
+            //Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLyHopDong());
+            Application.Run(new frmDangNhap());
         }
     }
 }
