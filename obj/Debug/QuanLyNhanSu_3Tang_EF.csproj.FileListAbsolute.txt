@@ -12,3 +12,23 @@ C:\Users\HP\source\repos\QuanLyNhanSu_3Tang_EF\bin\Debug\EntityFramework.xml
 C:\Users\HP\source\repos\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNh.B8A000AA.Up2Date
 C:\Users\HP\source\repos\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.exe
 C:\Users\HP\source\repos\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.pdb
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.csproj.AssemblyReference.cache
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmQuanLyChucVu.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmQuanLyHopDong.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.Properties.Resources.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.csproj.GenerateResource.cache
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.csproj.CoreCompileInputs.cache
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\QuanLyNhanSu_3Tang_EF.exe.config
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\QuanLyNhanSu_3Tang_EF.exe
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\QuanLyNhanSu_3Tang_EF.pdb
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\EntityFramework.dll
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\Guna.UI2.dll
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\bin\Debug\EntityFramework.xml
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.csproj.CopyComplete
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.exe
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.pdb
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmQuanLyBaoHiem.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmQuanLyNghiPhep.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmDangKyNghiPhep.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmQuanLyThongBao.resources
+D:\winform\Final Winform Project\QuanLyNhanSu_3Tang_EF\obj\Debug\QuanLyNhanSu_3Tang_EF.frmXemThongBao.resources

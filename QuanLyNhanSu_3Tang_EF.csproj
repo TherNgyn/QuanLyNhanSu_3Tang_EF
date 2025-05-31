@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,7 +62,48 @@
     <Compile Include="BaoHiem.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BS Layer\BLBaoHiem.cs" />
+    <Compile Include="BS Layer\BLChucVu.cs" />
     <Compile Include="BS Layer\BLHopDong.cs" />
+    <Compile Include="BS Layer\BLNghiPhep.cs" />
+    <Compile Include="BS Layer\BLTaiKhoan.cs" />
+    <Compile Include="BS Layer\BLThongBao.cs" />
+    <Compile Include="frmDangKyNghiPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKyNghiPhep.Designer.cs">
+      <DependentUpon>frmDangKyNghiPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyBaoHiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyBaoHiem.Designer.cs">
+      <DependentUpon>frmQuanLyBaoHiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyChucVu.Designer.cs">
+      <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyNghiPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNghiPhep.Designer.cs">
+      <DependentUpon>frmQuanLyNghiPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyThongBao.Designer.cs">
+      <DependentUpon>frmQuanLyThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemThongBao.Designer.cs">
+      <DependentUpon>frmXemThongBao.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChamCong.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
@@ -137,8 +178,26 @@
     <Compile Include="ThuongPhat.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDangKyNghiPhep.resx">
+      <DependentUpon>frmDangKyNghiPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyBaoHiem.resx">
+      <DependentUpon>frmQuanLyBaoHiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyChucVu.resx">
+      <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyNghiPhep.resx">
+      <DependentUpon>frmQuanLyNghiPhep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyHopDong.resx">
       <DependentUpon>frmQuanLyHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyThongBao.resx">
+      <DependentUpon>frmQuanLyThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemThongBao.resx">
+      <DependentUpon>frmXemThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,5 +244,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
