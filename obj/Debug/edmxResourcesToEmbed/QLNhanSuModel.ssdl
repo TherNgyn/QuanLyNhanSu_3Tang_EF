@@ -7,6 +7,21 @@
     <Property Name="MaLoai" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="TenBH" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="ChamCong">
+    <Key>
+      <PropertyRef Name="MaCC" />
+    </Key>
+    <Property Name="MaCC" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MoTa" Type="nvarchar(max)" />
+    <Property Name="HeSo" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChucVu">
+    <Key>
+      <PropertyRef Name="MaCV" />
+    </Key>
+    <Property Name="MaCV" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenCV" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="ctBaoHiem">
     <Key>
       <PropertyRef Name="MaBH" />
@@ -52,21 +67,6 @@
     <Property Name="MaThuongPhat" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="MaThang" Type="nvarchar" MaxLength="6" Nullable="false" />
     <Property Name="NgayThuongPhat" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ChamCong">
-    <Key>
-      <PropertyRef Name="MaCC" />
-    </Key>
-    <Property Name="MaCC" Type="nvarchar" MaxLength="10" Nullable="false" />
-    <Property Name="MoTa" Type="nvarchar(max)" />
-    <Property Name="HeSo" Type="float" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ChucVu">
-    <Key>
-      <PropertyRef Name="MaCV" />
-    </Key>
-    <Property Name="MaCV" Type="nvarchar" MaxLength="10" Nullable="false" />
-    <Property Name="TenCV" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="HopDong">
     <Key>
@@ -456,12 +456,12 @@
   </Association>
   <EntityContainer Name="QuanLyNhanSuModelStoreContainer">
     <EntitySet Name="BaoHiem" EntityType="Self.BaoHiem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChamCong" EntityType="Self.ChamCong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChucVu" EntityType="Self.ChucVu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ctBaoHiem" EntityType="Self.ctBaoHiem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ctChamCong" EntityType="Self.ctChamCong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ctPhuCap" EntityType="Self.ctPhuCap" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ctThuongPhat" EntityType="Self.ctThuongPhat" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ChamCong" EntityType="Self.ChamCong" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ChucVu" EntityType="Self.ChucVu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HopDong" EntityType="Self.HopDong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="LoaiTaiKhoan" EntityType="Self.LoaiTaiKhoan" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NghiPhep" EntityType="Self.NghiPhep" Schema="dbo" store:Type="Tables" />

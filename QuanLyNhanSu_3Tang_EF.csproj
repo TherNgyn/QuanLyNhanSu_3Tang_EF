@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,6 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -68,12 +69,20 @@
     <Compile Include="BaoHiem.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="BS Layer\BLCong.cs" />
     <Compile Include="BS Layer\BLHopDong.cs" />
     <Compile Include="BS Layer\BLLuong.cs" />
     <Compile Include="BS Layer\BLNhanVien.cs" />
     <Compile Include="BS Layer\BLThang.cs" />
     <Compile Include="BS Layer\BLThuongPhat.cs" />
+=======
+    <Compile Include="BS Layer\BLChucVu.cs" />
+    <Compile Include="BS Layer\BLHopDong.cs" />
+    <Compile Include="BS Layer\BLNhanVien.cs" />
+    <Compile Include="BS Layer\BLPhongBan.cs" />
+    <Compile Include="BS Layer\BLTaiKhoan.cs" />
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     <Compile Include="ChamCong.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
@@ -92,6 +101,7 @@
     <Compile Include="ctThuongPhat.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +131,37 @@
     </Compile>
     <Compile Include="frmQuanLyCongvaThang.Designer.cs">
       <DependentUpon>frmQuanLyCongvaThang.cs</DependentUpon>
+=======
+    <Compile Include="frmCapNhatMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatMatKhau.Designer.cs">
+      <DependentUpon>frmCapNhatMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuNhanVien.Designer.cs">
+      <DependentUpon>frmMenuNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuQuanTriVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuQuanTriVien.Designer.cs">
+      <DependentUpon>frmMenuQuanTriVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuTruongPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuTruongPhong.Designer.cs">
+      <DependentUpon>frmMenuTruongPhong.cs</DependentUpon>
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     </Compile>
     <Compile Include="frmQuanLyHopDong.cs">
       <SubType>Form</SubType>
@@ -128,6 +169,7 @@
     <Compile Include="frmQuanLyHopDong.Designer.cs">
       <DependentUpon>frmQuanLyHopDong.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmQuanLyThuongPhat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +187,25 @@
     </Compile>
     <Compile Include="frmThongKeLuongNhanVien.Designer.cs">
       <DependentUpon>frmThongKeLuongNhanVien.cs</DependentUpon>
+=======
+    <Compile Include="frmQuanLyNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNV.Designer.cs">
+      <DependentUpon>frmQuanLyNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyPhongBancs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyPhongBancs.Designer.cs">
+      <DependentUpon>frmQuanLyPhongBancs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     </Compile>
     <Compile Include="HopDong.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
@@ -202,6 +263,7 @@
     <Compile Include="ThuongPhat.cs">
       <DependentUpon>QLNhanSuModel.tt</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmChamCong.resx">
       <DependentUpon>frmChamCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,10 +275,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyCongvaThang.resx">
       <DependentUpon>frmQuanLyCongvaThang.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmCapNhatMatKhau.resx">
+      <DependentUpon>frmCapNhatMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuNhanVien.resx">
+      <DependentUpon>frmMenuNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuQuanTriVien.resx">
+      <DependentUpon>frmMenuQuanTriVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuTruongPhong.resx">
+      <DependentUpon>frmMenuTruongPhong.cs</DependentUpon>
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyHopDong.resx">
       <DependentUpon>frmQuanLyHopDong.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmQuanLyThuongPhat.resx">
       <DependentUpon>frmQuanLyThuongPhat.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +304,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKeLuongNhanVien.resx">
       <DependentUpon>frmThongKeLuongNhanVien.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmQuanLyNV.resx">
+      <DependentUpon>frmQuanLyNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyPhongBancs.resx">
+      <DependentUpon>frmQuanLyPhongBancs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyTaiKhoan.resx">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -236,7 +325,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="ReportLuongHDPCTP.rdlc" />
+=======
+    <None Include="app.manifest" />
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -269,6 +362,7 @@
       <DependentUpon>QLNhanSuModel.edmx</DependentUpon>
       <LastGenOutput>QLNhanSuModel.cs</LastGenOutput>
     </Content>
+<<<<<<< HEAD
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -296,9 +390,22 @@
     <None Include="Resources\salary.png" />
     <None Include="Resources\calendar.png" />
     <None Include="Resources\search.png" />
+=======
+    <None Include="Resources\salary1.png" />
+    <None Include="Resources\management1.png" />
+    <None Include="Resources\salary-voucher %282%29.png" />
+    <None Include="Resources\salary-voucher %281%29.png" />
+    <None Include="Resources\salary.png" />
+    <None Include="Resources\manager.png" />
+    <None Include="Resources\icons8-notification-962.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\4332392_18940.jpg" />
+    <None Include="Resources\management.png" />
+>>>>>>> e89ba1eae74a4389fb9312ef4764af0d26c0c270
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
